@@ -1,0 +1,187 @@
+@media print {
+  .tm-sidebar,
+  .tm-team-img,
+  .boxes,
+  .carousel-indicators,
+  .img-contact-us,
+  #contact {
+    display: none;
+  }
+
+  body,
+  .container,
+  .tm-main-content,
+  .tm-content-box,
+  .padding-medium,
+  .carousel,
+  footer.tm-footer {
+    max-width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  footer.tm-footer p:only-of-type {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    background-color: transparent;
+    text-transform: uppercase;
+    color: lightskyblue;
+    font-weight: 300;
+  }
+
+  .blocks .tm-team-description-container p:last-of-type {
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-style: italic;
+  }
+
+  .heading ol {
+    list-style-type: none;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  ol li:nth-of-type(2n+1) {
+    position: relative;
+    text-align: right;
+  }
+
+  ol li:nth-of-type(2n) {
+    position: relative;
+    text-align: left;
+  }
+}
+
+@media screen {
+  .tm-nav-item-link:hover {
+    background-color: lightskyblue;
+    color: #fff;
+  }
+
+  .tm-banner {
+    background: linear-gradient(to right, lightskyblue, burlywood);
+  }
+
+  .tm-banner-inner {
+    background-color: #fff;
+  }
+
+  .tm-banner-text {
+    text-shadow: 5px 5px 3px #333; 
+    position: relative;
+    animation: animation 5s;
+  }
+
+  @keyframes animation {
+    from {left: 200px;}
+    to {left: 0;}
+  }
+
+  .flex-2-col {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-2-col  h2 {
+    text-align: center;
+  }
+
+  .tm-box-bg-title:hover {
+    background-color: lightgrey;
+    color: lightskyblue;
+    font-style: italic;
+  }
+
+  .heading h2 {
+    color: lightskyblue;
+    text-align: center;
+  }
+
+  ol {
+    list-style-type: lower-alpha;
+  }
+
+  .heading li:hover::before {
+    content: ">";
+    font-weight: bold;
+  }
+
+  .heading li .text::after {
+    content: "New";
+    color: red;
+    font-size: 50%;
+    font-weight: bold;
+    vertical-align: top;
+    display:inline-block;
+    font-variant: small-caps;
+  }
+
+  .blocks .tm-team-description-container p:last-of-type {
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-style: italic;
+  }
+
+  .box-work {
+    padding: 10px;
+  }
+
+  .box-work:nth-child(odd) {
+    background-color: lightskyblue;
+    color: white;
+  }
+
+  .box-work p {
+    font-style: italic;    
+  }
+
+  .box-work p::first-letter {
+    font-weight: bold;    
+  }
+
+  .tm-section-description {
+    text-indent: 25px;
+    line-height: 30px;
+  }
+
+  input[type=text],
+  input[type=email] {
+    border: 0px;
+    border-bottom: 1px solid lightskyblue;
+  }
+
+  input[type=text]:focus,
+  input[type=email]:focus {
+    background-color: lightskyblue;
+  }
+
+  #contact_message {
+    border: 1px solid lightskyblue;
+    background: url("../img/email-icon.png") bottom 10px right 10px no-repeat;
+    background-size: 30px 30px;
+  }
+
+  .submit-btn {
+    float: right;
+    background-color: #fff;
+    border: 1px solid lightskyblue;
+    padding: 15px 25px;
+    color: lightskyblue;
+  }
+
+  nav, #home, section {
+    box-shadow: 0 0 1em rgba(61, 55, 61, 0.7);
+  }
+
+  section::before {
+    content: "";
+    display: block;
+    border-right: 45px solid transparent;
+    border-top: 45px solid lightskyblue;
+  }
+}
